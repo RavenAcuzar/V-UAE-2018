@@ -1,0 +1,33 @@
+page-contact {
+    .contact{
+        text-align: center;
+        color: white;
+        width: 80vw;
+        height: 81vh;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        h4{
+            font-size: 3.5vh;
+            font-weight: 300;
+        }
+        p{
+            font-size: 2.1vh;
+            margin: 3.5vh 0;
+        }
+        ion-row{
+            width: 70%;
+            font-size: 4vh;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+    code { 
+        unicode-bidi: embed;
+    }
+}

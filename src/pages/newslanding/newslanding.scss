@@ -1,0 +1,25 @@
+page-newslanding {
+    .news-h{
+        h1{
+            top: 0;
+            bottom: 0;
+        }
+    }
+    .news-h::after{
+        margin-top: 0.5vh;
+        height: 14.5vh;
+    }
+    .news-date{
+        text-align: center;
+        text-indent: 0;
+        font-size: 11px;
+        padding-bottom: 2vh;
+        color: #656565;
+    }
+    .header-title{
+        letter-spacing: 6px; 
+    }
+    .header-title.arabic{
+        letter-spacing: 0 !important;
+    }
+}

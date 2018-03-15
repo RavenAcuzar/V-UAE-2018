@@ -1,0 +1,34 @@
+<!--
+  Generated template for the SplashNextPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content no-padding>
+    <div ion-fixed style="z-index: 0;">
+        <img style="width:100vw; height:100%; position:stretch;" src="./assets/imgs/splash.jpg" />
+      </div>
+      <div class="splash-cont">
+        3... <br/>
+        2... <br/>
+        {{ 'SPLASH_PAGE.ONE' | translate }} <br/>
+        {{ 'SPLASH_PAGE.EXP' | translate }}
+      </div>
+</ion-content>
+<ion-footer no-border>
+    <ion-toolbar>
+      <ion-buttons>
+        <button [navPush]="Changelang" ion-button icon-left>
+          <ion-icon name="arrow-back"></ion-icon>
+        BACK
+        </button>
+      </ion-buttons>
+      <ion-buttons end>
+        <button ion-button icon-right (click)="GoToHome()">
+          NEXT
+          <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>

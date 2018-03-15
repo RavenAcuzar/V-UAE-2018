@@ -1,18 +1,75 @@
-<ion-header>
+<ion-header no-border>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content no-padding no-bounce>
+  <div class="home-bg">
+    <img src="./assets/imgs/home-bg.png" />
+    <div class="countdown" [hidden]="!hideCountdown">
+      <h4>{{'HOME_PAGE.WELC' | translate}} </h4>
+      <h5>{{'HOME_PAGE.DAY'| translate}} {{dayValue}}</h5>
+    </div>
+    <ion-row class="countdown" [hidden]="hideCountdown">
+        <ion-col col-3>
+          <h4>{{_days}}</h4>
+          <p>{{'HOME_PAGE.DAYS' | translate}}</p>
+        </ion-col>
+        <ion-col col-3>
+          <h4>{{_hours}}</h4>
+          <p>{{'HOME_PAGE.HOURS' | translate}}</p>
+        </ion-col>
+        <ion-col col-3>
+          <h4>{{_minutes}}</h4>
+          <p>{{'HOME_PAGE.MINUTES' | translate }}</p>
+        </ion-col>
+        <ion-col col-3>
+          <h4>{{_seconds}}</h4>
+          <p>{{'HOME_PAGE.SECONDS' | translate}}</p>
+        </ion-col>
+      </ion-row>
+  </div>
+  
+  <div style="margin-top: -18.7vw;">
+    <div class="btn-home btn-cnt" style="background-color: #b07a39;" (click)="GoToOne()">
+        <img src="./assets/imgs/home-btn1.png" />
+      <a style="height: 3rem;">
+        <h1>{{'HOME_PAGE.BTNS.btn_1' | translate}}</h1>
+      </a>
+    </div>
+    <div class="btn-home btn-cnt" style="background-color: #3997d3;" (click)="GoToMark()">
+      <img src="./assets/imgs/home-btn2.png" />
+      <a>
+        {{'HOME_PAGE.BTNS.btn_2_sub' | translate}}
+        <br>
+        <h1>{{'HOME_PAGE.BTNS.btn_2' | translate}}</h1>
+      </a>
+    </div>
+    <div class="btn-home btn-cnt" style="background-color: #385e9c;" (click)="GoToDownloads()">
+      <img src="./assets/imgs/home-btn3.png" />
+      <a>
+        {{'HOME_PAGE.BTNS.btn_3_sub' | translate}}
+        <br>
+        <h1>{{'HOME_PAGE.BTNS.btn_3' | translate}}</h1>
+      </a>
+    </div>
+  </div>
+  <div style="background-color:rgb(245, 245, 245); display:inline-block; width:100vw;">
+      <h5 style="color:#305D7F; font-size: 2.3vh; text-align:center;">{{'HOME_PAGE.NEWS_AND_UPDATES' | translate}}</h5>
+      <div style="padding:30px; padding-bottom: 1vh; padding-top:0;" *ngFor="let news of myNews">
+        <ion-card (click)="GoToNews(news.Title)">
+          <ion-item class="news-lbl">
+            <h3 [innerHTML]="news.localTitle"></h3>
+            <p>in {{news.SubCategory}}</p>
+          </ion-item>
+          <img [src]="news.ImageLink" />
+          <ion-card-content style="text-align:left; color:gray; font-size: 1.5vh;">
+              {{news.CreatedOnDate}}
+          </ion-card-content>
+        </ion-card>
+      </div>
+  </div>
 </ion-content>

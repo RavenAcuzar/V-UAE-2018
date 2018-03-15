@@ -14,3 +14,141 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+ion-header [class^="toolbar-background"] {
+    background-color: transparent;
+}
+ion-content {
+    > div.scroll-content, > div.fixed-content {
+        margin-top: 0 !important;
+    }
+    background-color: #90419d !important;
+}
+.sidemenu{
+    background: url('../assets/imgs/sidemenu-bg.jpg') no-repeat top left;
+    background-size: cover;
+    ion-list{
+        .item-block{
+            background-color: transparent !important;
+            color: white !important;
+            font-size: 14px !important;
+            min-height: 2vh !important;
+            ion-label{
+                padding-left: 40px !important;
+                white-space: normal;
+            }
+        }
+    } 
+}
+.share-footer{
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    p{
+        -webkit-margin-after: 0;
+        font-size: 13px;
+    }
+    ion-row{
+        width: 60%;
+        margin-left: 20%;
+        font-size: 30px;
+    }
+}
+.sidecont-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.page-content{
+    margin-top: 26vh;
+    background-color: rgba(245, 245, 245, 0.84);
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    h4{
+        text-align: center;
+        padding-top: 4vh;
+        color: #B14697;
+        font-size: 3vh;
+    }
+    p{
+        font-size: 2.3vh;
+        text-indent: 2rem;
+        color: #B14697;
+    }
+}
+.sidemenu ion-list .item.activeHighlight{
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    color: #B14697 !important;
+}
+.page-title-header{
+    position: relative;
+    z-index: 0;
+    img{
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        width: 100%;
+    }
+    h1{
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 6vh;
+        width: 95vw;
+        font-size: 5vh;
+        color: white;
+        font-weight: 300;
+        text-align: center;
+        z-index: 2;
+    }
+}
+.page-title-header::after{
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000000 170%);
+    margin-top: 3.5vh;
+    height: 22.5vh;
+    width: 100%;
+    content: '';
+}
+.photo-style{
+    position: relative;
+    height: 39vh;
+    margin-bottom: 4vh;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 39vh;
+        object-fit: cover;
+    }
+    h5{
+        position: absolute;
+        bottom: 4vh;
+        left: 0;
+        font-size: 4vh;
+        padding: 1vw;
+        padding-right: 12vw;
+        padding-left: 4vw;
+        background-color: #6FB5D3;
+        color: white;
+    }
+}
+.news-lbl{
+    ion-label{
+        white-space: normal;
+        h3{
+            color: #397D98;
+            font-size: 2.1vh;
+        }
+        p{
+            font-size: 1rem;
+            font-size: 1.5vh;
+        }
+    }
+}
+a{
+    color: white !important;
+    text-decoration: none;
+}

@@ -1,0 +1,118 @@
+{
+    "HOME_PAGE":{
+        "DAYS": "GÜNLER",
+        "HOURS": "SAATLER",
+        "MINUTES":"DAKİKALAR",
+        "SECONDS":"SANİYELER",
+        "BTNS":{
+            "btn_1": "BİZ BİRİZ",
+            "btn_2_sub": "V-Con İzini",
+            "btn_2": "Oluştur",
+            "btn_3_sub": "ÖZEL # VCON18",
+            "btn_3": "DUVAR KAĞITLARI"
+        },
+        "NEWS_AND_UPDATES": "HABERLER & GÜNCELLEMELER",
+        "WELC": "V-Malaysia 2018'e hoşgeldiniz!",
+        "DAY": "GÜN"
+    },
+    "SCHED_PAGE":{
+        "TITLE_H": "Günlük Program Akışı",
+        "CONTENT_1": "Günlük program ve güncellemeler için bu alanı kontrol edin!",
+        "CONTENT_2": "Lihat apa yang ada untuk hari ini!",
+        "CONTENT_3": "Günlük programı görmek için etkinlik yerinde olduğunuzdan emin olun."
+    },
+    "ONE_PAGE":{
+        "TITLE": "BİZ BİRİZ",
+        "CONTENT":{
+            "cnt_1": "Aileyi tanıyın. Evimize girin. Çağrıyı takip edin.",
+            "cnt_2": "2018 V-Con logosu esas olarak üç farklı renkten oluşur: yeşil, mavi ve mor.Yeşil, doğanın, enerjinin ve yaşamın rengidir.",
+            "cnt_3": "Büyüme, uyum ve çevre anlamlarıyla ilişkilidir. Dünyamızın hepimize eşit olarak sahip olduğu hatırlatılıyor. Onu sevmeliyiz ve yıllarca güzelliği beslediği ve bize esin kaynağı olduğu için onunla ilgilenmeliyiz. Bu misyonumuz, gezegenimizin bizim tek ve biricik evimiz olduğunun farkına varmamıza yardımcı olur.",
+            "cnt_4": "Mavi renk derinliği ve kararlılığı sembolize eder. 20 yıldır süren bir iş olarak, sürekli güç ve güvenlik yönüne doğru ilerlediğimizi kanıtladık. V, kuruluş değeri olarak güven, sadakat, bilgelik ve gerçek ile çalışır. ",
+            "cnt_5": "Mor, güç, soyluluk, hırs ve serveti temsil eder. Bu yolculuğa çıkmayı seçtik çünkü maddi özgürlük elde etmek ve sonunda diğer insanlara yardım ederek bunu geri vermek istiyoruz.",
+            "cnt_6": "Ortadaki “ONE” (BİR) sözcüğü, bu yılki temanın üç yönünü temsil eden üç çizgiden oluşuyor: One People. One Planet. One Purpose (Bir Halk, Bir Gezegen, Bir Amaç).",
+            "cnt_7": "Hansief, seçilen font The V'nin benzersizliğini anlatıyor. Benzersiz karakterlerle dolu mükemmel dokulara sahip cesur bir sans serif yazı olarak tanımlanmaktadır.",
+            "cnt_8": "Son olarak, şekil ”1” farklı darbelerden oluşur. The V'nin sinerjisine benzer şekilde, farklı inanç sistemleri ve geçmişleri ile farklı ülkelerden geliyoruz, ancak bizler, insanlığa yardım etmek için kendimizi yükseltmek olan tek bir amaca doğru hareket ediyoruz.",
+            "cnt_9": "Bir başka deyişle, şekil ”1”, insanlar olarak doğuştan gelen özlemimizi de büyük bir şeyin bir parçası olmak için uyandırır ve götürmeyi seçtiğimiz rolü oynarken yaptığımız herşeyde her zaman zirvede olmayı ve en iyisi olmayı arzuluyoruz.",
+            "cnt_10": "Genel olarak, V-Malaysia 2018 logosu sadeliği ve zekayı çağrıştırıyor. 24-28 Nisan 2018'de hayalperestlerin buluşmalarını beklerken, onlara açtığımız kollarımızla ve gezegene yenilenen sevgiyle, birliğimizin takdir edilmesinde ve bir amacımızın farkında olarak onlara hoş geldiniz diyoruz."
+        }
+    },
+    "NEWSLANDING_PAGE":{
+        "TITLE": "HABERLER & GÜNCELLEMELER",
+        "CONTENT": "OKU. İZLE. GÖRÜNTÜLE."
+    },
+    "NEWS_PAGE":{
+        "TITLE": "HABERLER"
+    },
+    "MERCH_PAGE":{
+        "CONTENT": "Standı ziyaret edin ve ellerinizi bu SEÇKİN V-MALAYSIA 2018 ürünleriyle doldurun!",
+        "CONTENT_2": "V-Malaysia 2018'deki The V Standında bulunan harika # VCON18 ürünlerini görmek için bu alanı izleyin!"
+    },
+    "MARK_PAGE":{
+        "TITLE": "V-Con İzini Oluştur",
+        "CONTENT":"V-Con büyüsüyle fotoğraflarınızı damgalayın! Fotoğrafınızı yükleyin ve özellikle #VCON18 rozeti ile işaretlenerek oluşturulan resmi bekleyin!",
+        "BTN_DWN": "İNDİR",
+        "BTN_UP": "Fotoğraf yükle"
+    },
+    "DOWN_PAGE":{
+        "TITLE": "ÖZEL # VCON18 DUVAR KAĞITLARI",
+        "CONTENT":"Mobil aygıtlarınız için ÜCRETSİZ indirilebilir bu duvar kağıtlarıyla nereye giderseniz gidin V-Con büyüsünü taşıyın!",
+        "BTN":{
+            "btn_1": "MOBİL İÇİN İNDİR",
+            "btn_2": "TABLET İÇİN İNDİR"
+        }
+    },
+    "FAQ_PAGE":{
+        "TITLE": "Sıkça Sorulan Sorular",
+        "QUESTIONS": {
+            "Q1":"Nasıl bilet alabilirim?",
+            "Q2":"Mevcut ödeme koşulları nelerdir?",
+            "Q3":"Neler Getirmelisin?",
+            "Q4":"Vize başvurusunda bulunmaya hazırlanmak için neye ihtiyacım olacak?",
+            "Q5":"Etkinliğin yapıldığı gün bilet satılacak mı?",
+            "Q6":"Tek günlük etkinlik biletleri var mı?"
+        },
+        "ANSWERS":{
+            "A1":"23 Nisan 2018 Kayıt Günü boyunca V-Malaysia 2018 biletini VShoppe aracılığıyla veya belirlenen noktalarda satın alabilirsiniz.",
+            "A2":"Şu anda nakit veya kredi kartı ile (Visa ve MasterCard) ödeme yapabilirsiniz.",
+            "A3":{
+                "A3-0":"V-Con'a mı gideceksiniz? Aşağıda, getirmeniz gereken 5 önemli şey var:",
+                "A3-1":"Kayıt sırasında, biletinizi aldıktan hemen sonra size e-posta yoluyla gönderilecek onay mektubunun kopyasını ve bir (1) geçerli kimliğinizi getirin.",
+                "A3-2":"Yiyecek, içecek, ulaşım, V-Con eşyaları, hediyelik eşyalar vb. için harcayabileceğiniz 5 gün için yeterli para. USD veya MYR olduğundan emin olun.",
+                "A3-3":"5 gün boyunca yetecek giysiler. Penang, Malezya'da bu zamanlarda ekstra sıcak olduğundan ekstra gömlek veya havlu getirdiğinizden emin olun.",
+                "A3-4":"Değerli V-Con anılarınızı en son haline getirmek için yanınıza bir fotoğraf makinesi alın ve eve döndüğünüzde ailenize ve gelecekteki kayıtlarınıza gösterebileceğiniz bir şeyleriniz olsun.",
+                "A3-5":"Sahnedeki değerli oturumların tadını çıkarırken, ciddi notlar almak için kendi kaleminizi ve defterinizi getirdiğinizden emin olun!"
+            },
+            "A4":{
+                "A4-1":"Seyahat tarihinden itibaren en az 6 ay geçerli pasaportunuz.",
+                "A4-2":"Pasaportunuzun en az 3 boş sayfaya sahip olduğundan emin olun.",
+                "A4-3":"VISA başvurusu için, vize şartlarını belirtin.",
+                "A4-4":"Tüm katılımcıların en az USD 500 nakit parası olması gerekir.",
+                "A4-5":"Tüm katılımcıların otel rezervasyon onayına sahip olmaları gerekir."
+            },
+            "A5":"Evet. Sadece nakit ve kredi kartı ile yapılan işlemler alınacaktır.",
+            "A6":"Hayır. Sizin için hazırladığımız 5 günlük program, yaşamı değiştirecek bir deneyim için 1. Gün'den 5. Gün'e kadar devam etmeniz gereken bir şeydir. Bu, işiniz için son derece gerekli olan, aksiyon dolu bir etkinlik grubuyla kapsamlı, bütüncül bir etkinliktir."
+        }
+    },
+    "CONT_PAGE":{
+        "TITLE":"BİZİMLE İLETİŞİME GEÇİN",
+        "CONTENT":"Web sitemize erişmekte sorun yaşıyorsanız veya SSS sayfamızda bulunmayan başka sorularınız varsa lütfen aşağıdaki e-posta adreslerimiz aracılığıyla bizimle iletişime geçin.",
+        "TECH_SUP": "Teknik Destek:",
+        "CONT_TRAN":"İçerik ve Çeviri için:",
+        "INQS": "Danışmak için:",
+        "LTS": "BEĞEN. ETİKETLE. PAYLAŞ",
+        "FLLW": "BİZİ TAKİP ET!"
+    },
+    "CHLANG_PAGE":{
+        "ENGLISH":"İNGİLİZCE",
+        "BAHASA-INDONESIAN": "BAHASA-ENDONEZCE",
+        "FRENCH":"FRANSIZCA",
+        "RUSSIAN":"RUSÇA",
+        "TURKISH": "TÜRKÇE",
+        "ARABIC": "ARAPÇA"  
+    },
+    "SPLASH_PAGE":{
+        "ONE": "BİR",
+        "EXP":"HAYATINIZI DEĞİŞTİRECEK DENEYİM SİZİ BEKLİYOR."
+    },
+    "CHAT_VOLT":"Volt ile sohbet et"
+}

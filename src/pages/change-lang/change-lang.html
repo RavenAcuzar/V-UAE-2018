@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ChangeLangPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header no-border>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-navbar>
+  </ion-header> -->
+
+
+<ion-content no-bounce>
+    <div ion-fixed style="z-index: 0;">
+        <img style="width:100vw; height:100%; position:cover;" src="./assets/imgs/bg-lang.jpg" />
+      </div>
+    <ion-list class="selectLang" radio-group no-lines >
+        <a ion-item class="menuItems" detail-none [navPush]="SplashnextPage" (click)="segmentChanged('en')">
+          <ion-label>{{ 'CHLANG_PAGE.ENGLISH' | translate }}</ion-label>
+        </a>
+        <a ion-item class="menuItems" detail-none [navPush]="SplashnextPage" (click)="segmentChanged('id')">
+          <ion-label>{{'CHLANG_PAGE.BAHASA-INDONESIAN' | translate }}</ion-label>
+        </a>
+        <a ion-item class="menuItems" detail-none [navPush]="SplashnextPage" (click)="segmentChanged('fr')">
+          <ion-label>{{'CHLANG_PAGE.FRENCH' | translate}}</ion-label>
+        </a>
+        <a ion-item class="menuItems" detail-none [navPush]="SplashnextPage" (click)="segmentChanged('ru')">
+          <ion-label>{{'CHLANG_PAGE.RUSSIAN' | translate}}</ion-label>
+        </a>
+        <a ion-item class="menuItems" detail-none [navPush]="SplashnextPage" (click)="segmentChanged('tr')">
+          <ion-label>{{'CHLANG_PAGE.TURKISH' | translate}}</ion-label>
+        </a>
+        <a ion-item class="menuItems" detail-none [navPush]="SplashnextPage" (click)="segmentChanged('ar')">
+            <ion-label>{{'CHLANG_PAGE.ARABIC' | translate}}</ion-label>
+          </a>
+      </ion-list>
+</ion-content>

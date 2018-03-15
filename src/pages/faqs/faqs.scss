@@ -1,0 +1,17 @@
+page-faqs {
+    h4{
+        padding-top: 2vh !important;
+        font-size: 2.5vh !important;
+    }
+    p{
+        text-indent: 0 !important;
+    }
+    .header-title{
+        letter-spacing: 6px; 
+        width: 100vw; 
+        font-size: 3.5vh;
+    }
+    .header-title.arabic{
+        letter-spacing: 0 !important;
+    }
+}

@@ -1,0 +1,13 @@
+page-news-and-updates {
+    ion-content{
+        background-color:rgb(245, 245, 245) !important;
+    }
+    .header-title{
+        letter-spacing: 6px; 
+        width: 100vw; 
+        font-size: 4vh;
+    }
+    .header-title.arabic{
+        letter-spacing: 0 !important;
+    }
+}

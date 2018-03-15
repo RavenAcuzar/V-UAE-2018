@@ -1,0 +1,10 @@
+page-sched {
+    .header-title{
+        letter-spacing: 6px; 
+        width: 100vw; 
+        font-size: 4vh;
+    }
+    .header-title.arabic{
+        letter-spacing: 0 !important;
+    }
+}
