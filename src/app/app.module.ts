@@ -40,6 +40,11 @@ import { ConnectionService } from './services/connection.service';
 import { VoltChatService } from './services/volt-chat.service';
 import { VoltChatPage } from '../pages/volt-chat/volt-chat';
 import { ChatPopoverPage } from './popover';
+import { GoogleAnalytics } from '@ionic-native/google-analytics';
+import { GoogleAnalyticsService } from './services/analytics.service';
+import { AskDatoPage } from '../pages/ask-dato/ask-dato';
+import { SurveyPage } from '../pages/survey/survey';
+import { SuperStarPage } from '../pages/super-star/super-star';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -61,7 +66,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     MerchPage,
     SplashNextPage,
     VoltChatPage,
-    ChatPopoverPage
+    ChatPopoverPage,
+    AskDatoPage,
+    SurveyPage,
+    SuperStarPage
   ],
   imports: [
     BrowserModule,
@@ -93,7 +101,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     MerchPage,
     SplashNextPage,
     VoltChatPage,
-    ChatPopoverPage
+    ChatPopoverPage,
+    AskDatoPage,
+    SurveyPage,
+    SuperStarPage
   ],
   providers: [
     StatusBar,
@@ -101,7 +112,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Base64ToGallery, File, FileTransfer, AndroidPermissions,
     PhotoLibrary, Crop, Camera, SocialSharing, Geofence, GeofenceService, 
-    Network,ConnectionService, Push, SQLite, VoltChatService
+    Network,ConnectionService, Push, SQLite, VoltChatService, GoogleAnalytics, GoogleAnalyticsService
   ]
 })
 export class AppModule {}

@@ -6,7 +6,7 @@
 -->
 <ion-header no-border>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <button ion-button menuToggle color="primary">
       <ion-icon name="menu"></ion-icon>
     </button>
   </ion-navbar>
@@ -30,8 +30,8 @@
       <div class="merch-cont" padding  *ngFor="let merch of myMerchandise">
         <img [src]="merch.image"/>
         <div>
-          <h4>{{merch.title}}</h4>
-          <p>{{merch.price}}</p>
+          <h4 dir=ltr>{{merch.title}}</h4>
+          <p dir=ltr>{{merch.price}}</p>
         </div>
       </div>
   </div>

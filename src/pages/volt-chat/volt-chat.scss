@@ -12,8 +12,13 @@ page-volt-chat {
     ion-navbar {
         min-height: 6vh;
         padding: 0;
+        button{
+            color: #79564a !important;
+        }
     }
-
+    ion-title{
+        div{color: #79564a !important;}
+    }
     input {
         height: 100% !important;
         width: 100% !important;

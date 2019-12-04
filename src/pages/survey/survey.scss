@@ -1,0 +1,41 @@
+page-survey {
+    ion-title{
+        div{color:map-get($colors, primary) !important;}
+    }
+    .background-splash{   
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../assets/imgs/bg-lang.jpg");
+        background-size: cover;
+        background-position: center center;
+        filter: brightness(82%);
+    }
+    .survey-cont{
+        background-color: rgba(111, 181, 211, 0.89);
+        color: white;
+        ion-list{
+            margin-bottom: 16px !important;
+            ion-item{
+                background-color: transparent !important;
+                color: white !important;
+                padding-left: 8px !important;
+            }
+        }
+    }
+    .message{
+        h4{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            height: 44vw;
+            text-align: center;
+            width: 91vw;
+            font-size: 7vw;
+            font-weight: 300;
+            color: white;
+        }
+    }
+}

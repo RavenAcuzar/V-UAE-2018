@@ -1,4 +1,19 @@
 {
+    "SIDEMENU":{
+        "HOME":"ACCUEIL",
+        "DAILY_PROG":"PROGRAMME QUOTIDIEN",
+        "WE_ARE_ONE":"NOUS SOMMES UN",
+        "NEWS_UPS":"ACTUALITÉS ET MISES À JOUR",
+        "MERCH":"PRODUITS DU V-CON",
+        "MARK":"FAITES VOTRE MARQUE V-CON",
+        "DOWNLOAD":"FONDS D’ÉCRAN TÉLÉCHARGEABLES DU V-CON",
+        "CHAT":"Discuter avec Volt",
+        "FAQS":"FAQs",
+        "CONTACT":"NOUS CONTACTER",
+        "SELECT_LANG":"CHOISIR LA LANGUE",
+        "ASK_DATO":"Demandez à Dato",
+        "SURVEY":"ENQUÊTE VCON"
+    },
     "HOME_PAGE":{
         "DAYS": "JOURS",
         "HOURS": "HEURES",
@@ -9,31 +24,31 @@
             "btn_2_sub": "Faites votre",
             "btn_2": "marque V-Con",
             "btn_3_sub": "FONDS D’ÉCRAN ",
-            "btn_3": "EXCLUSIFS DU #VCON18"
+            "btn_3": "EXCLUSIFS DU V-CON 2018"
         },
         "NEWS_AND_UPDATES": "ACTUALITÉS ET MISES À JOUR",
-        "WELC": "Bienvenue au V-Malaysia 2018!",
+        "WELC": "Bienvenue au V-UAE 2018!",
         "DAY": "JOUR"
     },
     "SCHED_PAGE":{
         "TITLE_H": "Programme quotidien",
-        "CONTENT_1": "Surveillez cet espace pour le programme quotidien et les mises à jour!",
-        "CONTENT_2": "Voyez ce qui se passe aujourd'hui!",
+        "CONTENT_1": "Restez à l'écoute du programme quotidien et des mises à jour!",
+        "CONTENT_2": "Voici ce que nous avons pour vous aujourd'hui!",
         "CONTENT_3": "Assurez-vous d’être sur le lieu de l'événement pour voir les horaires du programme quotidien."
     },
     "ONE_PAGE":{
         "TITLE": "NOUS SOMMES UN",
         "CONTENT":{
-            "cnt_1": "Apprenez à connaître la famille. Entrez dans notre maison. Suivez l'appel.",
-            "cnt_2": "Le logo V-Con 2018 est principalement composé de trois couleurs différentes : vert, bleu et violet.",
-            "cnt_3": "Le vert est la couleur de la nature, de l'énergie et de la vie. Il est associé aux significations de la croissance, de l'harmonie et de l'environnement. On nous rappelle que la terre nous appartient tous de la même manière. Nous devons l’aimer et prendre soin d’elle comme elle a été entretenue et nous a inspiré par sa beauté au fil des ans. Cela alimente notre mission de reconnaître que notre planète est notre seule et unique maison.",
-            "cnt_4": "Alors que la couleur bleue symbolise la profondeur et la stabilité. En tant qu'entreprise qui existe depuis 20 ans, nous avons prouvé que nous avançons continuellement dans la direction de la force et de la sécurité. The V travaille avec confiance, loyauté, sagesse et vérité comme valeurs fondatrices.",
-            "cnt_5": "Le violet incarne le pouvoir, la noblesse, l'ambition et la richesse. Nous avons choisi de faire ce voyage parce que nous voulons atteindre la liberté financière et finalement, donner en retour en aidant les autres.",
-            "cnt_6": "Le mot “ONE” (UN) au centre est composé de trois lignes représentant les trois facettes du thème de cette année : One People. One Planet. One Purpose (Un peuple. Une planète. Un but).",
-            "cnt_7": "Hansief, la police choisie parle du caractère unique de The V. Elle est décrite comme police en gras sans serif avec de grandes textures remplies de caractères uniques.",
-            "cnt_8": "Enfin, le chiffre “1“ est composé de différents traits. Semblable à la synergie de The V, nous venons de différents pays, avec des systèmes de croyance et milieux différents, mais nous avançons ensemble vers un seul but, qui est de nous élever pour aider l'humanité.",
-            "cnt_9": "Dans un autre sens, le chiffre “1“ évoque aussi notre aspiration innée en tant qu'êtres humains à faire partie de quelque chose de grand, et en jouant le rôle que nous avons choisi de jouer, nous aspirons toujours à être au top et à être les meilleurs dans ce que nous faisons.",
-            "cnt_10": "Dans l'ensemble, le logo du V-Malaysia 2018 évoque la simplicité et l'intelligence. Alors que nous prévoyons le retour des rêveurs du 24 au 28 avril 2018, nous les accueillons à bras ouverts et avec un amour renouvelé pour la planète, l'appréciation de notre unité et la reconnaissance de notre seul but."
+            "cnt_1": "Le logo utilise les couleurs du drapeau des EAU: rouge, vert, blanc et noir.",
+            "cnt_2": "Le rouge représente la rusticité, la bravoure et le courage. C'est un pigment qui représente un esprit pionnier et résistant et des qualités de leadership. Cela représente notre passion de continuer à faire plus d'années dans l'activité afin d’aider plus de gens à réaliser leurs rêves et à les transformer en réalité.",
+            "cnt_3": "Le vert représente l'espoir, la joie, l'optimisme et l'amour. Bien que ça symbolise la prospérité du pays, ça nous rappelle aussi notre responsabilité envers Mère Nature; aimer et respecter notre seule et unique maison.",
+            "cnt_4": "Le blanc représente la paix et l'honnêteté. Puisqu’elle est la couleur la plus pure, elle est interprétée pour symboliser la propreté. Notre intention est claire, il s’agit de réaliser notre but, de faire de la Terre un meilleur endroit où vivre pour la génération future.",
+            "cnt_5": "Le noir représente la défaite des ennemis, et aussi la force de l'esprit. Dans une industrie sensible à beaucoup de négativités, il est important d'avoir un esprit fort qui écarte toutes ces distractions.",
+            "cnt_6": "Le mot “ONE” au centre est composé de trois lignes représentant les trois facettes du thème de l’année: One People. One Planet. One Purpose.",
+            "cnt_7": "Hansief, la police choisie parle du caractère unique de The V. Elle est décrite comme police en gras sans serif avec de grandes textures remplies de caractères uniques.",
+            "cnt_8": "Enfin, le chiffre “1” est composé de différents traits. Semblable à la synergie de The V, nous venons de différents pays, avec des systèmes de croyance et milieux différents, mais nous avançons ensemble pour un seul but, qui est de nous élever pour aider l'humanité.",
+            "cnt_9": "Dans un autre sens, le chiffre “1” évoque aussi notre aspiration innée en tant qu'êtres humains à faire partie de quelque chose de grand, et en jouant le rôle que nous avons choisi de jouer, nous aspirons toujours à être au top, à être les meilleurs dans ce que nous faisons.",
+            "cnt_10": "Dans l'ensemble, le logo du V-UAE 2018 combine la puissance du pays où nous allons célébrer le V- Con à la beauté de l’accueil à la maison de nos rêveurs du 8 au 12 septembre 2018 au Hamdan Sports Complex, Dubai, UAE."
         }
     },
     "NEWSLANDING_PAGE":{
@@ -44,17 +59,17 @@
         "TITLE": "Les Actualités"
     },
     "MERCH_PAGE":{
-        "CONTENT": "Visitez le stand, et mettez la main sur ces produits EXCLUSIFS du V-MALAYSIA 2018!",
-        "CONTENT_2": "Regardez cet espace pour voir les super produits du #VCON18 exclusivement disponibles au Stand de The V au V-Malaysia 2018!"
+        "CONTENT": "Visitez la boutique SANS LIMITES, et mettez la main sur la dernière collection EXCLUSIVE de V merchandise ici au V-UAE 2018!",
+        "CONTENT_2": "Regardez cet espace pour voir les super produits du V-CON exclusivement disponibles au Stand de The LIMITLESS au V-UAE 2018!"
     },
     "MARK_PAGE":{
         "TITLE": "Faites votre marque V-Con",
-        "CONTENT":"Marquez vos photos avec la magie du V-Con! Il vous suffit de télécharger votre photo et d'attendre l'image générée spécialement marquée d’un badge #VCON18!",
+        "CONTENT":"Marquez vos photos avec la magie du V-Con! Il vous suffit de télécharger votre photo et d'attendre l'image générée spécialement marquée d’un badge V-UAE 2018!",
         "BTN_DWN": "Télécharger",
         "BTN_UP": "Envoyer la photo"
     },
     "DOWN_PAGE":{
-        "TITLE": "FONDS D’ÉCRAN EXCLUSIFS DU #VCON18",
+        "TITLE": "FONDS D’ÉCRAN EXCLUSIFS DU V-CON",
         "CONTENT":"Emmenez la magie du V-Con partout où vous allez avec ces fonds d'écran téléchargeables GRATUITEMENT pour vos appareils mobiles!",
         "BTN":{
             "btn_1": "TÉLÉCHARGER POUR TÉLÉPHONE MOBILE",
@@ -65,6 +80,7 @@
         "TITLE": "Questions Fréquemment Posées",
         "QUESTIONS": {
             "Q1":"Comment puis-je acheter un billet?",
+            "Q7":"Comment puis-je réclamer mon bracelet?",
             "Q2":"Quelles sont les modalités de paiement disponibles?",
             "Q3":"Que faut-il apporter?",
             "Q4":"Que dois-je préparer pour la demande de visa ?",
@@ -72,13 +88,14 @@
             "Q6":"Y aura-t-il des billets d'une seule journée d'événement disponibles?"
         },
         "ANSWERS":{
-            "A1":"Vous pouvez acheter votre billet V-Malaysia 2018 via VShoppe ou aux comptoirs désignés pendant le jour d'inscription, le 23 avril 2018.",
+            "A1":"Vous pouvez acheter votre billet du V-UAE 2018 via ticketmagic.me ou aux comptoirs désignés le jour d'inscription, le 7 septembre 2018.",
+            "A7":"Assurez-vous d’être personnellement présent le jour d’inscription pour réclamer votre bracelet. La collecte des bracelets / billets par une représentation ne sera pas acceptée et est fortement déconseillée. Il n'y aura pas de remboursement de nouveaux billets / bracelets après avoir été considérés comme reçus. Vous devez en acheter à nouveau en cas de perte ou de remplacement.",
             "A2":"Actuellement, vous pouvez payer en espèces ou par carte de crédit (Visa et MasterCard)..",
             "A3":{
                 "A3-0":"Vous allez au V-Con? Voici les 5 choses importantes que vous devez apporter:",
                 "A3-1":"Lors de l'inscription, apportez une (1) pièce d'identité valide et une copie de la lettre de confirmation qui vous sera envoyée par courriel juste après l'achat de votre billet.",
-                "A3-2":"Ayez suffisamment d'argent de poche pour 5 jours, que vous pourrez dépenser pour la nourriture, la boisson, le transport, les produits du V-Con, les souvenirs, etc. Assurez-vous d'avoir votre argent en USD ou MYR.",
-                "A3-3":"De bons vêtements pour 5 jours. Assurez-vous d’apporter des chemises ou serviettes supplémentaires car il fait très chaud à Penang, en Malaisie à cette époque.",
+                "A3-2":"Ayez suffisamment d'argent de poche pour 5 jours, que vous pouvez dépenser pour la nourriture, la boisson, le transport, les marchandises V-Con, les souvenirs, etc. Assurez- vous d'avoir votre argent en USD ou AED.",
+                "A3-3":"Ayez de bons vêtements pour 5 jours. Assurez- vous d'apporter des chemises ou des serviettes supplémentaires car il fait très chaud à Dubaï, aux Emirats Arabes Unis à cette période.",
                 "A3-4":"Prenez un appareil photo avec vous pour garder longtemps vos précieux souvenirs du V-Con et ayez quelque chose que vous pourrez montrer à votre famille et vos futurs prospects lorsque vous rentrerez chez vous.",
                 "A3-5":"Comme vous voulez savourer chaque session précieuse sur scène, assurez-vous d’apporter votre propre stylo et votre carnet pour une bonne prise de note!"
             },
@@ -103,16 +120,25 @@
         "FLLW": "NOUS SUIVRE!"
     },
     "CHLANG_PAGE":{
-        "ENGLISH":"ANGLAIS",
-        "BAHASA-INDONESIAN": "BAHASA-INDONÉSIEN",
+        "ENGLISH":"ENGLISH",
         "FRENCH":"FRANÇAIS",
-        "RUSSIAN":"RUSSE",
-        "TURKISH": "TURC",
-        "ARABIC": "ARABE"  
+        "RUSSIAN":"РУССКИЙ",
+        "TURKISH": "TÜRKÇE", 
+        "ARABIC":"العربية"  
     },
     "SPLASH_PAGE":{
-        "ONE": "UN.",
-        "EXP":"VOUS ÊTES LIÉ À L’EXPÉRIENCE DE TOUTE UNE VIE."
+        "ONE": "Ça y est!",
+        "EXP":"Votre incroyable voyage du V-UAE 2018 est à portée de main."
     },
-    "CHAT_VOLT":"Discuter avec Volt"
+    "CHAT_VOLT":"Discuter avec Volt",
+    "SUBMIT_ANSWERS":"SOUMETTEZ VOS RÉPONSES",
+    "SURVEY_MSG1":"Surveillez cet espace et répondez à notre sondage pour mieux vous servir.",
+    "SURVEY_MSG2":"Merci d'avoir répondu au sondage!",
+    "VOTING_PRE":"Le vote sera ouvert le 4ème Jour du V-UAE 2018!",
+    "VOTING_CLOSED":"Le vote est CLOS.",
+    "VOTING_MSG":"VOTEZ pour votre finaliste préféré du V-Con Superstar!",
+    "VOTING_BTN":"ENVOYEZ LE VOTE",
+    "VOTING_DONE1":"MERCI D'AVOIR VOTÉ!",
+    "VOTING_DONE2":"Restez à l’écoute pendant que nous faisons le décompte de vos votes pour annoncer sur scène le 5ème Jour, le vainqueur du V-UAE 2018!",
+    "VOTING_WINNER":"FÉLICITATIONS au V-Con Superstar du V-UAE 2018!!!"
 }

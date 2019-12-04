@@ -4,6 +4,8 @@ import { Storage } from "@ionic/storage";
 import { GeofenceService } from '../../app/services/geofence.service';
 import { Http, URLSearchParams } from '@angular/http';
 import { Subscription } from 'rxjs/Subscription';
+import { GoogleAnalyticsService } from '../../app/services/analytics.service';
+import { LANGUAGE_KEY } from '../../app/app.constants';
 
 /**
  * Generated class for the SchedPage page.
@@ -28,7 +30,7 @@ export class SchedPage {
   private locationNotEnabled = false;
   private dayIndex = 0;
   private todayDate = new Date();
-  private startDate = new Date("2018-04-24");
+  private startDate = new Date("2018-09-08");
   private isScheduleShown = false;
   private isEventNotYetStarted = false;
   private isEventAlreadyFinished = false;
@@ -37,11 +39,17 @@ export class SchedPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private storage: Storage,
     private geofenceService: GeofenceService,
-    private http: Http) {
-      this.currentLang = window.localStorage['mylanguage'];
+    private http: Http,
+    private gaSvc:GoogleAnalyticsService) {
+      this.storage.get(LANGUAGE_KEY).then(lang=>{
+        this.currentLang = lang;
+      })
+      
   }
 
   ionViewDidLoad() {
+    this.gaSvc.gaTrackPageEnter('Schedule Page');
+    this.refreshScheduleData()
     this.updateCanViewSched();
 
     this.transitionSubscription = this.geofenceService.subscribeToTransition((g) => {
@@ -110,8 +118,9 @@ export class SchedPage {
   }
 
   refreshScheduleData() {
+    this.storage.get(LANGUAGE_KEY).then(lang=>{
     let body = new URLSearchParams();
-    body.set('language', window.localStorage['mylanguage']);
+    body.set('language', lang);
 
     console.log("Trying to retrieve schedule data from server...");
     this.http.get('https://cums.the-v.net/program.aspx', { params: body })
@@ -120,6 +129,7 @@ export class SchedPage {
           this.scheduleData = res.json();
           this.storage.set('schedule', this.scheduleData);
           this.onSuccessRetrieval();
+          this.canViewSched = true;
         } catch (e) {
           console.error("Cannot retrieve schedule data from server.");
           console.error(JSON.stringify(e));
@@ -128,6 +138,7 @@ export class SchedPage {
         console.error("Cannot retrieve schedule data from server.");
         console.error(JSON.stringify(e));
       });
+    })
   }
 
   onSuccessRetrieval() {

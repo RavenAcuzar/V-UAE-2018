@@ -1,0 +1,48 @@
+page-super-star {
+    .background-splash{   
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../assets/imgs/super-bg.png");
+        background-size: cover;
+        background-position: center center;
+    }
+    .no-voting{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 30vw;
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        color: white;
+    }
+    .menuItems.activated{
+        background-color: rgba(255, 255, 255, 0.3) !important;
+    }
+    .menuItems{
+        ion-label{
+            color: white !important;
+        }
+        
+        background-color: transparent !important;
+        ion-radio{
+            .radio-icon{
+                display: none;
+            }
+            
+                .item-cover[aria-checked="true"]{
+                    background-color: rgba(255, 255, 255, 0.3) !important;
+                    
+                }
+        }
+        &.item-block > .item-inner{
+            border-bottom: 0;
+            text-align: center;
+            letter-spacing: 1px;
+            margin-top: 1.5vh;
+            margin-bottom: 1.5vh;
+        }
+    }
+}

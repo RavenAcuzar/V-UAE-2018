@@ -5,6 +5,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 import { PhotoLibrary } from '@ionic-native/photo-library';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { Crop } from '@ionic-native/crop';
+import { GoogleAnalyticsService } from '../../app/services/analytics.service';
 
 /**
  * Generated class for the MarkPage page.
@@ -12,7 +13,7 @@ import { Crop } from '@ionic-native/crop';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
+ 
 @Component({
   selector: 'page-mark',
   templateUrl: 'mark.html',
@@ -35,7 +36,11 @@ export class MarkPage {
     private photoLibrary: PhotoLibrary,
     private alert: AlertController,
     private camera: Camera,
-    private crop: Crop) {
+    private crop: Crop,
+    private gaSvc:GoogleAnalyticsService) {
+  }
+  ionViewDidLoad() {
+    this.gaSvc.gaTrackPageEnter('VCon Mark Page');
   }
   
   choosePhoto() {
@@ -172,7 +177,7 @@ export class MarkPage {
       });
       loading.present();
 
-      this.base64ToGallery.base64ToGallery(this.imageData, { prefix: '_img' }).then(libraryItem => {
+      this.base64ToGallery.base64ToGallery(this.imageData, { prefix: '_img', mediaScanner:true  }).then(libraryItem => {
         loading.dismiss();
 
         let alert = this.alert.create({
@@ -236,7 +241,7 @@ export class MarkPage {
 
     let filepath = prefix + libraryItem;
     console.log('Filepath: ' + filepath);
-    this.socialSharing.share('#VCON18', '', filepath).then((a) => {
+    this.socialSharing.share('#VUAE2018', '', filepath).then((a) => {
       console.log(JSON.stringify(a));
       if (a) {
         let alert = this.alert.create({
@@ -262,7 +267,7 @@ export class MarkPage {
       });
       loading.present();
 
-      this.base64ToGallery.base64ToGallery(this.imageData, { prefix: '_img' }).then(libraryItem => {
+      this.base64ToGallery.base64ToGallery(this.imageData, { prefix: '_img', mediaScanner:true  }).then(libraryItem => {
         loading.dismiss();
         this.share(libraryItem);
       }, e => {

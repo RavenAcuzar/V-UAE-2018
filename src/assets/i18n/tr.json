@@ -1,4 +1,19 @@
 {
+    "SIDEMENU":{
+        "HOME":"ANA SAYFA",
+        "DAILY_PROG":"GÜNLÜK PROGRAM AKIŞI",
+        "WE_ARE_ONE":"BİZ BİRİZ",
+        "NEWS_UPS":"HABERLER & GÜNCELLEMELER",
+        "MERCH":"V-CON ÜRÜNLERİ",
+        "MARK":"V-CON İZİNİZİ OLUŞTURMAK",
+        "DOWNLOAD":"V-CON İNDİRİLEBİLEN DUVAR KAĞITLARI",
+        "CHAT":"Volt ile sohbet et",
+        "FAQS":"SSS",
+        "CONTACT":"BİZİMLE İLETİŞİME GEÇİN",
+        "SELECT_LANG":"DİL SEÇİNİZ",
+        "ASK_DATO":"Dato'ya Sor",
+        "SURVEY":"VCON ANKETİ"
+    },
     "HOME_PAGE":{
         "DAYS": "GÜNLER",
         "HOURS": "SAATLER",
@@ -8,32 +23,32 @@
             "btn_1": "BİZ BİRİZ",
             "btn_2_sub": "V-Con İzini",
             "btn_2": "Oluştur",
-            "btn_3_sub": "ÖZEL # VCON18",
+            "btn_3_sub": "ÖZEL V-CON 2018",
             "btn_3": "DUVAR KAĞITLARI"
         },
         "NEWS_AND_UPDATES": "HABERLER & GÜNCELLEMELER",
-        "WELC": "V-Malaysia 2018'e hoşgeldiniz!",
+        "WELC": "V-UAE 2018'e hoşgeldiniz!",
         "DAY": "GÜN"
     },
     "SCHED_PAGE":{
         "TITLE_H": "Günlük Program Akışı",
-        "CONTENT_1": "Günlük program ve güncellemeler için bu alanı kontrol edin!",
-        "CONTENT_2": "Lihat apa yang ada untuk hari ini!",
+        "CONTENT_1": "Günlük program takvimi ve güncellemeleri için takip etmeye devam edin!",
+        "CONTENT_2": "Bugün senin için elimizde olanlar!",
         "CONTENT_3": "Günlük programı görmek için etkinlik yerinde olduğunuzdan emin olun."
     },
     "ONE_PAGE":{
         "TITLE": "BİZ BİRİZ",
         "CONTENT":{
-            "cnt_1": "Aileyi tanıyın. Evimize girin. Çağrıyı takip edin.",
-            "cnt_2": "2018 V-Con logosu esas olarak üç farklı renkten oluşur: yeşil, mavi ve mor.Yeşil, doğanın, enerjinin ve yaşamın rengidir.",
-            "cnt_3": "Büyüme, uyum ve çevre anlamlarıyla ilişkilidir. Dünyamızın hepimize eşit olarak sahip olduğu hatırlatılıyor. Onu sevmeliyiz ve yıllarca güzelliği beslediği ve bize esin kaynağı olduğu için onunla ilgilenmeliyiz. Bu misyonumuz, gezegenimizin bizim tek ve biricik evimiz olduğunun farkına varmamıza yardımcı olur.",
-            "cnt_4": "Mavi renk derinliği ve kararlılığı sembolize eder. 20 yıldır süren bir iş olarak, sürekli güç ve güvenlik yönüne doğru ilerlediğimizi kanıtladık. V, kuruluş değeri olarak güven, sadakat, bilgelik ve gerçek ile çalışır. ",
-            "cnt_5": "Mor, güç, soyluluk, hırs ve serveti temsil eder. Bu yolculuğa çıkmayı seçtik çünkü maddi özgürlük elde etmek ve sonunda diğer insanlara yardım ederek bunu geri vermek istiyoruz.",
-            "cnt_6": "Ortadaki “ONE” (BİR) sözcüğü, bu yılki temanın üç yönünü temsil eden üç çizgiden oluşuyor: One People. One Planet. One Purpose (Bir Halk, Bir Gezegen, Bir Amaç).",
-            "cnt_7": "Hansief, seçilen font The V'nin benzersizliğini anlatıyor. Benzersiz karakterlerle dolu mükemmel dokulara sahip cesur bir sans serif yazı olarak tanımlanmaktadır.",
-            "cnt_8": "Son olarak, şekil ”1” farklı darbelerden oluşur. The V'nin sinerjisine benzer şekilde, farklı inanç sistemleri ve geçmişleri ile farklı ülkelerden geliyoruz, ancak bizler, insanlığa yardım etmek için kendimizi yükseltmek olan tek bir amaca doğru hareket ediyoruz.",
-            "cnt_9": "Bir başka deyişle, şekil ”1”, insanlar olarak doğuştan gelen özlemimizi de büyük bir şeyin bir parçası olmak için uyandırır ve götürmeyi seçtiğimiz rolü oynarken yaptığımız herşeyde her zaman zirvede olmayı ve en iyisi olmayı arzuluyoruz.",
-            "cnt_10": "Genel olarak, V-Malaysia 2018 logosu sadeliği ve zekayı çağrıştırıyor. 24-28 Nisan 2018'de hayalperestlerin buluşmalarını beklerken, onlara açtığımız kollarımızla ve gezegene yenilenen sevgiyle, birliğimizin takdir edilmesinde ve bir amacımızın farkında olarak onlara hoş geldiniz diyoruz."
+            "cnt_1": "Logo, BAE bayrağının renklerini kullanır: kırmızı, yeşil, beyaz ve siyah.",
+            "cnt_2": "Kırmızı, sertliği, cesurluk ve cesareti temsil eder. Esnek, öncü bir ruh ve liderlik niteliklerini temsil eden bir pigmenttir. Daha fazla insanın hayallerini gerçekleştirmelerine ve onları gerçeğe dönüştürebilmelerine yardımcı olmak için bu işte daha fazla yıl sürdürmeye devam etme tutkumuzu ifade eder.",
+            "cnt_3": "Yeşil umut, neşe, iyimserlik ve sevgiyi temsil eder. Ülkenin refahını sembolize ederken, aynı zamanda Doğa Ana'ya olan evimizi sevmek ve saygı duyma sorumluluğumuzu da hatırlatıyor.",
+            "cnt_4": "Beyaz, barış ve dürüstlüğü temsil eder. En saf renk olduğu için, temizliği simgelemek için yorumlanır. Niyetimiz açıktır ve bu, amacımızın gerçekleştirilmesi, Dünya'nın gelecek nesiller için yaşamak için daha iyi bir yer olmasını sağlamaktır.",
+            "cnt_5": "Siyah düşmanların yenilgisini ve aynı zamanda zihnin gücünü gösterir. Pek çok olumsuzluğa karşı duyarlı bir endüstride, tüm bu dikkat dağınıklıklarını saptayan güçlü bir zihne sahip olmak önemlidir.",
+            "cnt_6": "Merkezde “BİR” kelimesi, bu yılın temasının üç yönünü temsil eden üç satırdan oluşuyor: Bir Topluluk. Bir Gezegen. Bir Amaç.",
+            "cnt_7": "Seçilen yazı tipi Hansief, The V’un benzersizliğinden bahsediyor. Eşsiz karakterlerle dolu harika dokular içeren kalın bir sans serif yazı tipi olarak tanımlanır.",
+            "cnt_8": "Son olarak, “1” rakamı farklı vuruşlardan oluşur. V'nin sinerjisine benzer şekilde, farklı ülkelerden, farklı inanç sistemleri ve geçmişleri ile geldik, ancak tek bir amaca doğru hareket ediyoruz, bu da insanlığa yardım etmek için kendimizi yetiştirmektir.",
+            "cnt_9": "Başka bir deyişle, “1” figürü, insanlar gibi büyük bir şeyin parçası olmak için doğuştan gelen özlemimizi çağrıştırıyor ve almayı seçtiğimiz rolü oynama sürecinde hep en iyisi olmak için yaptıklarımızda zirvede olmak istiyoruz.",
+            "cnt_10": "Genel olarak V-UAE 2018 logosu, V-Con'u kutlayacağımız ülkenin gücünü ve 8-12 Eylül 2018'de Dubai, Birleşik Arap Emirlikleri, Hamdan Spor Kompleksi'nde hayalperestlerimizin ev sahipleriyle gelen güzelliği bir araya getiriyor."
         }
     },
     "NEWSLANDING_PAGE":{
@@ -44,18 +59,18 @@
         "TITLE": "HABERLER"
     },
     "MERCH_PAGE":{
-        "CONTENT": "Standı ziyaret edin ve ellerinizi bu SEÇKİN V-MALAYSIA 2018 ürünleriyle doldurun!",
-        "CONTENT_2": "V-Malaysia 2018'deki The V Standında bulunan harika # VCON18 ürünlerini görmek için bu alanı izleyin!"
+        "CONTENT": "SINIRSIZ Mağazamızı ziyaret edin ve V-UAE 2018'de en son V EXCLUSIVE ürün koleksiyonuna ulaşın!",
+        "CONTENT_2": "V-UAE 2018'deki The LIMITLESS Standında bulunan harika V-CON ürünlerini görmek için bu alanı izleyin!"
     },
     "MARK_PAGE":{
         "TITLE": "V-Con İzini Oluştur",
-        "CONTENT":"V-Con büyüsüyle fotoğraflarınızı damgalayın! Fotoğrafınızı yükleyin ve özellikle #VCON18 rozeti ile işaretlenerek oluşturulan resmi bekleyin!",
+        "CONTENT":"Fotoğraflarınızı V-Con büyüsü ile damgalayın! Fotoğrafınızı yükleyin ve özellikle V-UAE 2018 rozeti ile işaretlenmiş olan görüntüyü bekleyin!",
         "BTN_DWN": "İNDİR",
         "BTN_UP": "Fotoğraf yükle"
     },
     "DOWN_PAGE":{
-        "TITLE": "ÖZEL # VCON18 DUVAR KAĞITLARI",
-        "CONTENT":"Mobil aygıtlarınız için ÜCRETSİZ indirilebilir bu duvar kağıtlarıyla nereye giderseniz gidin V-Con büyüsünü taşıyın!",
+        "TITLE": "ÖZEL V-Con DUVAR KAĞITLARI",
+        "CONTENT":"Mobil cihazlarınız için bu ücretsiz indirilebilir duvar kağıtları ile gittiğiniz her yere V-Con büyüsünü getirin!",
         "BTN":{
             "btn_1": "MOBİL İÇİN İNDİR",
             "btn_2": "TABLET İÇİN İNDİR"
@@ -65,6 +80,7 @@
         "TITLE": "Sıkça Sorulan Sorular",
         "QUESTIONS": {
             "Q1":"Nasıl bilet alabilirim?",
+            "Q7":"Bilekliğimi nasıl talep edebilirim?",
             "Q2":"Mevcut ödeme koşulları nelerdir?",
             "Q3":"Neler Getirmelisin?",
             "Q4":"Vize başvurusunda bulunmaya hazırlanmak için neye ihtiyacım olacak?",
@@ -72,13 +88,14 @@
             "Q6":"Tek günlük etkinlik biletleri var mı?"
         },
         "ANSWERS":{
-            "A1":"23 Nisan 2018 Kayıt Günü boyunca V-Malaysia 2018 biletini VShoppe aracılığıyla veya belirlenen noktalarda satın alabilirsiniz.",
+            "A1":"V-UAE 2018 biletinizi ticketmagic.me veya 7 Eylül 2018 Kayıt Günü sırasında belirlenen sıralardan alabilirsiniz.",
+            "A7":"Lütfen bilekliğinizi talep etmek için kayıtta bizzat bulunun. Temsili bir şekilde bileklik / bilet koleksiyonu verilmeyecek ve şiddetle tavsiye edilmeyecektir. Para iadesi yapılmayacak, tahsil edildikten sonra yeni bir bilet / bileklik verilmeyecektir. Kayıp veya değişim durumunda tekrar satın almanız gerekmektedir.",
             "A2":"Şu anda nakit veya kredi kartı ile (Visa ve MasterCard) ödeme yapabilirsiniz.",
             "A3":{
                 "A3-0":"V-Con'a mı gideceksiniz? Aşağıda, getirmeniz gereken 5 önemli şey var:",
                 "A3-1":"Kayıt sırasında, biletinizi aldıktan hemen sonra size e-posta yoluyla gönderilecek onay mektubunun kopyasını ve bir (1) geçerli kimliğinizi getirin.",
-                "A3-2":"Yiyecek, içecek, ulaşım, V-Con eşyaları, hediyelik eşyalar vb. için harcayabileceğiniz 5 gün için yeterli para. USD veya MYR olduğundan emin olun.",
-                "A3-3":"5 gün boyunca yetecek giysiler. Penang, Malezya'da bu zamanlarda ekstra sıcak olduğundan ekstra gömlek veya havlu getirdiğinizden emin olun.",
+                "A3-2":"Gıda, içecek, ulaşım, V-Con ürünleri, hediyelik eşya, vb. Harcama yapabileceğiniz 5 gün sürecek kadar cep harçlığı, USD veya AED cinsinden paranız olduğundan emin olun.",
+                "A3-3":"5 günlük giysi. Bu dönemde Dubai, BAE'de ekstra sıcak olduğundan ekstra gömlek ve havlu getirdiğinizden emin olun.",
                 "A3-4":"Değerli V-Con anılarınızı en son haline getirmek için yanınıza bir fotoğraf makinesi alın ve eve döndüğünüzde ailenize ve gelecekteki kayıtlarınıza gösterebileceğiniz bir şeyleriniz olsun.",
                 "A3-5":"Sahnedeki değerli oturumların tadını çıkarırken, ciddi notlar almak için kendi kaleminizi ve defterinizi getirdiğinizden emin olun!"
             },
@@ -103,16 +120,25 @@
         "FLLW": "BİZİ TAKİP ET!"
     },
     "CHLANG_PAGE":{
-        "ENGLISH":"İNGİLİZCE",
-        "BAHASA-INDONESIAN": "BAHASA-ENDONEZCE",
-        "FRENCH":"FRANSIZCA",
-        "RUSSIAN":"RUSÇA",
-        "TURKISH": "TÜRKÇE",
-        "ARABIC": "ARAPÇA"  
+        "ENGLISH":"ENGLISH",
+        "FRENCH":"FRANÇAIS",
+        "RUSSIAN":"РУССКИЙ",
+        "TURKISH": "TÜRKÇE", 
+        "ARABIC":"العربية"   
     },
     "SPLASH_PAGE":{
-        "ONE": "BİR",
-        "EXP":"HAYATINIZI DEĞİŞTİRECEK DENEYİM SİZİ BEKLİYOR."
+        "ONE": "Bunu sen yaptın!",
+        "EXP":"İnanılmaz V-UAE 2018 yolculuğunuz sadece bir vuruş ötede."
     },
-    "CHAT_VOLT":"Volt ile sohbet et"
+    "CHAT_VOLT":"Volt ile sohbet et",
+    "SUBMIT_ANSWERS":"YANIT VERİN",
+    "SURVEY_MSG1":"Bu alanı izleyin ve size daha iyi hizmet verebilmek için anketimize yanıt verin.",
+    "SURVEY_MSG2":"Anketi cevapladığınız için teşekkür ederiz!",
+    "VOTING_PRE":"Oylama V-UAE 2018'in 4. Gününde açılacak!",
+    "VOTING_CLOSED":"Oylama KAPANDI.",
+    "VOTING_MSG":"Favori V-Con Superstar finalisti için OY KULLANIN!",
+    "VOTING_BTN":"OYUNUZU GÖNDERİN",
+    "VOTING_DONE1":"OYLAMA İÇİN TEŞEKKÜR EDERİZ.",
+    "VOTING_DONE2":"Oylarınızı sayarken ve 5. Günde sahnede kazananı ilan ederken bizden ayrılmayın. V-UAE 2018!",
+    "VOTING_WINNER":"V-UAE 2018’in V-Con Superstar’ına TEBRİKLER!!!"
 }

@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController, ToastController, Toast } from 'ionic-angular';
 import { NewslandingPage } from '../newslanding/newslanding';
 import { Http, URLSearchParams, RequestOptions, Headers } from '@angular/http';
+import { GoogleAnalyticsService } from '../../app/services/analytics.service';
+import { Storage } from '@ionic/storage';
+import { LANGUAGE_KEY } from '../../app/app.constants';
 
 /**
  * Generated class for the NewsAndUpdatesPage page.
@@ -21,11 +24,15 @@ export class NewsAndUpdatesPage {
   toastReload:Toast;
   constructor(public navCtrl: NavController, public navParams: NavParams,
   private loadingController: LoadingController, private toastCtrl:ToastController,
-  private http:Http) {
-    this.currentLang = window.localStorage['mylanguage'];
+  private http:Http, private gaSvc:GoogleAnalyticsService,private storage:Storage) {
+    this.storage.get(LANGUAGE_KEY).then(lang=>{
+      this.currentLang = lang;
+    })
+   
   }
 
   ionViewDidLoad() {
+    this.gaSvc.gaTrackPageEnter('News and Updates Page');
     this.getNews();
   }
   ionViewDidLeave(){ 
@@ -36,7 +43,7 @@ export class NewsAndUpdatesPage {
   GoToNews(id: String){
     this.navCtrl.push(NewslandingPage, {
       id: id
-    });;
+    });
   }
   
   getNews() {
@@ -45,12 +52,12 @@ export class NewsAndUpdatesPage {
       content: 'Verifying...'
     });
     loadingPopup.present();
-
+    this.storage.get(LANGUAGE_KEY).then(lang=>{
     let body = new URLSearchParams();
     body.set('action', 'getOldsNews');
     body.set('count', '10');
     body.set('page', '1');
-    body.set('language', window.localStorage['mylanguage']);
+    body.set('language',lang);
 
     let options = new RequestOptions({
       headers: new Headers({
@@ -96,6 +103,7 @@ export class NewsAndUpdatesPage {
           loadingPopup.dismiss();
       }, () => {
       });
+    });
   }
 
 }

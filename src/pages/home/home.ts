@@ -7,7 +7,10 @@ import { MarkPage } from '../mark/mark';
 import { Http, RequestOptions, Headers, URLSearchParams } from '@angular/http';
 import { Subscription } from 'rxjs/Subscription';
 import { Observable } from 'rxjs/Rx';
-
+import { GoogleAnalyticsService } from '../../app/services/analytics.service';
+import { Storage } from '@ionic/storage';
+import { LANGUAGE_KEY } from '../../app/app.constants';
+ 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -21,6 +24,7 @@ export class HomePage {
   subscription: Subscription;
   _dateNow: Date;
   _VDate: Date;
+  _regDay:Date;
   dayValue: string;
   private isLeaving: boolean = false;
   myNews = [];
@@ -29,32 +33,38 @@ export class HomePage {
   constructor(public navCtrl: NavController,
     private loadingController: LoadingController,
     private toastCtrl: ToastController,
-    private http: Http) {
-
+    private http: Http,
+    private gaSvc:GoogleAnalyticsService,
+    private storage:Storage) {
+      this.getNews();
 
   }
   ionViewDidEnter() {
-    this._VDate = new Date("2018-04-24T00:00:00+08:00");
+    this.gaSvc.gaTrackPageEnter('Home Page');
+    this._VDate = new Date("2018-09-08T00:00:00+04:00");
+    this._regDay= new Date("2018-09-07T00:00:00+04:00");
     this._dateNow = new Date();
-    if (this._dateNow >= this._VDate) {
+    if (this._dateNow >= this._regDay) {
       this.hideCountdown = true;
       this.checkDateValue();
       this.subscription.unsubscribe();
     }
     else
       this.countDown();
-    this.getNews();
+    
   }
   checkDateValue() {
-    if (this._dateNow.getMonth() === 3 && this._dateNow.getDate() === 24) {
+    if (this._dateNow.getMonth() + 1 === 9 && this._dateNow.getDate() === 7) {
+      this.dayValue = "Registration"
+    } else if (this._dateNow.getMonth() + 1 === 9 && this._dateNow.getDate() === 8) {
       this.dayValue = "1"
-    } else if (this._dateNow.getMonth() === 3 && this._dateNow.getDate() === 25) {
+    } else if (this._dateNow.getMonth() + 1 === 9 && this._dateNow.getDate() === 9) {
       this.dayValue = "2"
-    } else if (this._dateNow.getMonth() === 3 && this._dateNow.getDate() === 26) {
+    } else if (this._dateNow.getMonth() + 1 === 9 && this._dateNow.getDate() === 10) {
       this.dayValue = "3"
-    } else if (this._dateNow.getMonth() === 3 && this._dateNow.getDate() === 27) {
+    } else if (this._dateNow.getMonth() + 1 === 9 && this._dateNow.getDate() === 11) {
       this.dayValue = "4"
-    } else if (this._dateNow.getMonth() === 3 && this._dateNow.getDate() === 28) {
+    } else if (this._dateNow.getMonth() + 1 === 9 && this._dateNow.getDate() === 12) {
       this.dayValue = "5"
     } else {
       this.dayValue = " ";
@@ -85,26 +95,41 @@ export class HomePage {
       content: 'Verifying...'
     });
     loadingPopup.present();
-
-    let body = new URLSearchParams();
-    body.set('action', 'getOldsNews');
-    body.set('count', '4');
-    body.set('page', '1');
-    body.set('language', window.localStorage['mylanguage']);
-
-    let options = new RequestOptions({
-      headers: new Headers({
-        'Content-Type': 'application/x-www-form-urlencoded'
-      })
-    });
-    this.http.post('http://cums.the-v.net/site.aspx', body, options)
-      .timeout(20000)
-      .subscribe(response => {
-        try {
-          this.myNews = response.json();
-          loadingPopup.dismiss();
-        } catch (e) {
-          
+    this.storage.get(LANGUAGE_KEY).then(lang=>{
+      let body = new URLSearchParams();
+      body.set('action', 'getOldsNews');
+      body.set('count', '4');
+      body.set('page', '1');
+      body.set('language', lang);
+  
+      let options = new RequestOptions({
+        headers: new Headers({
+          'Content-Type': 'application/x-www-form-urlencoded'
+        })
+      });
+      this.http.post('http://cums.the-v.net/site.aspx', body, options)
+        .timeout(20000)
+        .subscribe(response => {
+          try {
+            this.myNews = response.json();
+            loadingPopup.dismiss();
+          } catch (e) {
+            
+            let toast = this.toastCtrl.create({
+              message: 'Something went wrong! Reload and Try again.',
+              position: 'bottom',
+              showCloseButton: true,
+              closeButtonText: 'Reload'
+            });
+            toast.onDidDismiss(() => {
+              if (!this.isLeaving)
+                this.getNews();
+            })
+            toast.present();
+            this.toastReload = toast;
+            loadingPopup.dismiss();
+          }
+        }, e => {
           let toast = this.toastCtrl.create({
             message: 'Something went wrong! Reload and Try again.',
             position: 'bottom',
@@ -118,23 +143,9 @@ export class HomePage {
           toast.present();
           this.toastReload = toast;
           loadingPopup.dismiss();
-        }
-      }, e => {
-        let toast = this.toastCtrl.create({
-          message: 'Something went wrong! Reload and Try again.',
-          position: 'bottom',
-          showCloseButton: true,
-          closeButtonText: 'Reload'
+        }, () => {
         });
-        toast.onDidDismiss(() => {
-          if (!this.isLeaving)
-            this.getNews();
-        })
-        toast.present();
-        this.toastReload = toast;
-        loadingPopup.dismiss();
-      }, () => {
-      });
+    })
   }
 
 

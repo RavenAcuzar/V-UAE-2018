@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="net.the_v.vconapp604850" version="2018.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>V-Malaysia 2018</name>
+<widget id="net.thev.vconapp604850" version="3.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>V-UAE 2018</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
     <content src="index.html" />
@@ -15,7 +15,7 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="ScrollEnabled" value="false" />
-    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-minSdkVersion" value="19" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreenDuration" value="300" />
@@ -82,10 +82,16 @@
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
+        <config-file parent="NSPhotoLibraryAddUsageDescription" target="*-Info.plist">
+            <string>To save the vcon mark photo to your device.</string>
+        </config-file>
         <config-file parent="NSPhotoLibraryUsageDescription" target="*-Info.plist">
             <string>To save the wallpapers to your device.</string>
         </config-file>
         <config-file parent="NSLocationAlwaysUsageDescription" target="*-Info.plist">
+            <string>To check if you're at the event venue</string>
+        </config-file>
+        <config-file parent="NSLocationAlwaysAndWhenInUseUsageDescription" target="*-Info.plist">
             <string>To check if you're at the event venue</string>
         </config-file>
         <config-file parent="NSLocationUsageDescription" target="*-Info.plist">
@@ -102,33 +108,34 @@
         </config-file>
     </platform>
     <allow-navigation href="http://192.168.130.105:8100" />
-    <engine name="ios" spec="~4.5.4" />
+    <engine name="ios" spec="4.5.4" />
     <plugin name="cordova-base64-to-gallery" spec="^4.1.3" />
     <plugin name="cordova-plugin-android-permissions" spec="^1.0.0" />
     <plugin name="cordova-plugin-file" spec="^6.0.1" />
-    <plugin name="cordova-plugin-camera" spec="^4.0.2" />
+    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
     <plugin name="cordova-plugin-crop" spec="^0.4.0" />
-    <plugin name="cordova-plugin-photo-library" spec="^2.1.0">
+    <plugin name="cordova-plugin-photo-library" spec="^2.1.1">
         <variable name="PHOTO_LIBRARY_USAGE_DESCRIPTION" value=" " />
     </plugin>
-    <plugin name="cordova-plugin-x-socialsharing" spec="^5.3.1" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-    <plugin name="cordova-plugin-device" spec="^2.0.1" />
+    <plugin name="cordova-plugin-device" spec="^2.0.2" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
-    <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="cordova-plugin-ionic-keyboard" spec="^2.1.2" />
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
-    <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
-    <plugin name="cordova-plugin-add-swift-support" spec="^1.6.0" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
+    <plugin name="cordova-plugin-add-swift-support" spec="^1.7.2" />
     <plugin name="cordova-plugin-file-opener2" spec="^2.0.19" />
     <plugin name="cordova-plugin-console" spec="^1.1.0" />
     <plugin name="cordova-custom-config" spec="^5.0.2" />
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
-    <plugin name="cordova-plugin-geofence" spec="git+https://github.com/compelling/cordova-plugin-geofence.git" />
+    <plugin name="cordova-plugin-geofence" spec="^0.7.0" />
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
+    <plugin name="cordova-plugin-compat" spec="^1.2.0" />
+    <plugin name="cordova-sqlite-storage" spec="^2.3.3" />
     <plugin name="phonegap-plugin-push" spec="^2.1.3">
         <variable name="SENDER_ID" value="597577788490" />
         <variable name="FCM_VERSION" value="11.6.2" />
     </plugin>
-    <plugin name="cordova-plugin-compat" spec="^1.2.0" />
-    <plugin name="cordova-sqlite-storage" spec="^2.2.0" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.1" />
+    <plugin name="cordova-plugin-google-analytics" spec="^1.8.3" />
 </widget>

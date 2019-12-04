@@ -1,6 +1,6 @@
 <ion-header no-border>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <button ion-button menuToggle color="primary">
       <ion-icon name="menu"></ion-icon>
     </button>
   </ion-navbar>
@@ -8,7 +8,7 @@
 
 <ion-content no-padding no-bounce>
   <div class="home-bg">
-    <img src="./assets/imgs/home-bg.png" />
+    <img style="width: 100vw;" src="./assets/imgs/home-bg.png" />
     <div class="countdown" [hidden]="!hideCountdown">
       <h4>{{'HOME_PAGE.WELC' | translate}} </h4>
       <h5>{{'HOME_PAGE.DAY'| translate}} {{dayValue}}</h5>
@@ -35,13 +35,13 @@
   
   <div style="margin-top: -18.7vw;">
     <div class="btn-home btn-cnt" style="background-color: #b07a39;" (click)="GoToOne()">
-        <img src="./assets/imgs/home-btn1.png" />
+        <img src="./assets/imgs/home-btn1.jpg" />
       <a style="height: 3rem;">
         <h1>{{'HOME_PAGE.BTNS.btn_1' | translate}}</h1>
       </a>
     </div>
     <div class="btn-home btn-cnt" style="background-color: #3997d3;" (click)="GoToMark()">
-      <img src="./assets/imgs/home-btn2.png" />
+      <img src="./assets/imgs/home-btn2.jpg" />
       <a>
         {{'HOME_PAGE.BTNS.btn_2_sub' | translate}}
         <br>
@@ -49,7 +49,7 @@
       </a>
     </div>
     <div class="btn-home btn-cnt" style="background-color: #385e9c;" (click)="GoToDownloads()">
-      <img src="./assets/imgs/home-btn3.png" />
+      <img src="./assets/imgs/home-btn3.jpg" />
       <a>
         {{'HOME_PAGE.BTNS.btn_3_sub' | translate}}
         <br>

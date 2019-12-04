@@ -1,6 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams, Slides, Toast, ToastController, LoadingController } from 'ionic-angular';
 import { Http } from '@angular/http';
+import { GoogleAnalyticsService } from '../../app/services/analytics.service';
+import { Storage } from '@ionic/storage';
+import { LANGUAGE_KEY } from '../../app/app.constants';
 
 /**
  * Generated class for the MerchPage page.
@@ -22,7 +25,8 @@ export class MerchPage {
   private merchHide: Boolean;
   constructor(public navCtrl: NavController, public navParams: NavParams,
     protected http: Http, protected loadingController: LoadingController,
-    protected toastCtrl: ToastController) {
+    protected toastCtrl: ToastController, private gaSvc:GoogleAnalyticsService,
+  storage:Storage) {
     this.merchSlides = [
       { image: "./assets/imgs/slider-0.jpg" },
       { image: "./assets/imgs/slider-1.jpg" },
@@ -30,17 +34,23 @@ export class MerchPage {
       { image: "./assets/imgs/slider-3.jpg" }
     ]
     this.getMerch();
+    storage.get(LANGUAGE_KEY).then(lang=>{
+      if(lang=="ar"){
+        this.slides._rtl = true;
+      }
+    })
+    
   }
   ionViewDidEnter() {
+    this.gaSvc.gaTrackPageEnter('Merchandise Page');
     this.slides.autoplayDisableOnInteraction = false;
-    if(window.localStorage['mylanguage']=="ar"){
-      this.slides._rtl = true;
-    }
+    
   }
 
   getMerch() {
     let loadingPopup = this.loadingController.create({
-      content: 'Verifying...'
+      content: 'Verifying...',
+      enableBackdropDismiss: true
     });
     loadingPopup.present();
 
@@ -56,6 +66,7 @@ export class MerchPage {
           try {
             console.log(result._body);
             this.myMerchandise = JSON.parse(result._body);
+            loadingPopup.dismiss();
           }
           catch (e) {
             let toast = this.toastCtrl.create({

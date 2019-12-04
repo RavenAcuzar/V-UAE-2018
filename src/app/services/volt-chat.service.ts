@@ -40,7 +40,7 @@ export class VoltChatService {
 
     getPreviousMessages() {
         return this.prepareVoltChatTable().then(db => {
-            return db.executeSql(`SELECT * FROM volt_chat_vcon`, {});
+            return db.executeSql(`SELECT * FROM volt_chat_vcon`, []);
 
         }).then(a => {
             try {
@@ -118,7 +118,7 @@ export class VoltChatService {
 
     deleteUserConversation() {
         return this.prepareVoltChatTable().then(db => {
-            return db.executeSql(`DELETE FROM volt_chat_vcon`, {});
+            return db.executeSql(`DELETE FROM volt_chat_vcon`, []);
         }).then(a => {
             this.chatClearObservable.next();
             return true;
@@ -138,7 +138,7 @@ export class VoltChatService {
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                         sender TEXT NOT NULL,
                         message TEXT NOT NULL,
-                        datesent TEXT NOT NULL)`, {})
+                        datesent TEXT NOT NULL)`, [])
                     .then(() => { resolve(db); })
                     .catch(e => { reject(e); })
             } catch (e) {

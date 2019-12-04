@@ -25,8 +25,8 @@ export class GeofenceService {
     ) {
         this.intoFence = {
             id: GeofenceService.EVT_GEOFENCE_ID_IN,
-            latitude: 25.0513009,
-            longitude: 55.3179699,
+            latitude: 25.051265, 
+            longitude: 55.317953,
             radius: 5000,
             transitionType: 1,
             notification: {
