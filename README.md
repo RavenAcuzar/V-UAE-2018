@@ -25,7 +25,7 @@ Setup the following requirements to your local machine.
 
 Create ionic starter app.
 ```
-ionic start VMalaysiaApp https://github.com/RavenAcuzar/V-UAE-2018/
+ionic start VUAEApp https://github.com/RavenAcuzar/V-UAE-2018/
 ```
 Initialize node packages (This is a very old project. Possible errors can be encountered with deprecated packages used.)
 ```
